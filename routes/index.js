@@ -35,7 +35,7 @@ let calculTotalCommande = (dataCardBike) => {
 }
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/https://gagoude.github.io/projet-bike-shop/', function (req, res, next) {
   if (req.session.dataCardBike == undefined) {
     req.session.dataCardBike = [];
   }
@@ -43,7 +43,7 @@ router.get('/', function (req, res, next) {
   res.render('index', { dataBike: dataBike });
 });
 
-router.get('/shop', async function (req, res, next) {
+router.get('/https://gagoude.github.io/projet-bike-shop/shop', async function (req, res, next) {
   if (req.session.dataCardBike == undefined) {
     req.session.dataCardBike = [];
   }
